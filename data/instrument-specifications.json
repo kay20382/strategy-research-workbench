@@ -1,0 +1,17 @@
+{
+  "schema": "mc-instrument-specifications-v1",
+  "instruments": {
+    "TXF1": {
+      "price_scale": 1,
+      "minimum_move": 1,
+      "tick_size": 1,
+      "point_value": 200,
+      "evidence": [
+        "既有 TXF1 契約設定與 MC 報告；一點跳動、每點 200 元。",
+        "outputs/mc-price-symbol-config-native-v1/findings.md",
+        "outputs/mc-native-price-general-v1/findings.md",
+        "跨 NH14、YAO1、KAIv7 的固定回歸案例，商品設定不依策略改變。"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+config_version=5
+
+[application]
+config/name="策略研究工作台"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Godot/app_userdata/REA PL 策略研究工作台"
+run/main_scene="res://studio.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1500
+window/size/viewport_height=960
+window/size/window_width_override=1500
+window/size/window_height_override=960
+window/size/min_width=1120
+window/size/min_height=760
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.027, 0.039, 0.067, 1)
+

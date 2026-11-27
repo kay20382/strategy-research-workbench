@@ -1,0 +1,546 @@
+{
+  "schema": "mc-profit-factor-native-vectors-v1",
+  "sources": [
+    {
+      "case": "nh14",
+      "path": "C:\\WorkSpace\\Codex\\REA\\TXF1  KGI_07_NH14 策略回測績效報告.xlsx",
+      "sha256": "cec514d177f4515483dee1572eac30a188a52bb7325a3a2b2b4e8ba4c0dcaec7"
+    },
+    {
+      "case": "yao1",
+      "path": "C:\\WorkSpace\\Codex\\REA\\TXF1  KGI_07_YAO1 策略回測績效報告.xlsx",
+      "sha256": "b6dfffded783b9c63f739d11cb9adb2147f78c2a632fff9cf5b05e66253297a3"
+    },
+    {
+      "case": "kaiv7",
+      "path": "C:\\WorkSpace\\Codex\\REA\\TXF1  REA_KGI_07_KAIv7 策略回測績效報告.xlsx",
+      "sha256": "37ef774c839911e4563adc9aebee52b6f8e50ccf79511c9c114fc45d88bb2290"
+    },
+    {
+      "case": "ma5",
+      "path": "C:\\WorkSpace\\Codex\\REA\\TXF1  KGI_08_MA5 策略回測績效報告.xlsx",
+      "sha256": "66965c6f92505129cb4c229579f44b6bf4c67b04aa67176591b3edda221f3581"
+    },
+    {
+      "case": "k01",
+      "path": "C:\\WorkSpace\\Codex\\REA\\TXF1  KGI_mii_K01 策略回測績效報告.xlsx",
+      "sha256": "7b20f74e469ffaec5140b7965c7112f310caef56eaada823dba5661366c35b2c"
+    },
+    {
+      "case": "be5",
+      "path": "C:\\WorkSpace\\Codex\\REA\\TXF1  KGI_08_BE5 策略回測績效報告.xlsx",
+      "sha256": "8314ac9969b50e1ad8dbd192f0f5c2725995a5fb7fdb0419d8de48926e422b85"
+    },
+    {
+      "case": "be5_native_parity",
+      "path": "C:\\WorkSpace\\Codex\\REA\\TXF1  REA_KGI_08_BE5_Parity20261028 策略回測績效報告.xlsx",
+      "sha256": "cd6f95a71386c69894fc82f6b1fa97ddad7d977f4d951249f65832373d1a9e4e"
+    }
+  ],
+  "vectors": [
+    {
+      "case": "nh14",
+      "column": "B",
+      "kind": "raw",
+      "profit": 10607800.0,
+      "loss": -5772600.0,
+      "expected": 1.8376121678273223
+    },
+    {
+      "case": "nh14",
+      "column": "B",
+      "kind": "adjusted",
+      "profit": 9817141.270275922,
+      "loss": -6231843.397863282,
+      "expected": 1.5753189936772056
+    },
+    {
+      "case": "nh14",
+      "column": "B",
+      "kind": "specific",
+      "profit": 6919600.0,
+      "loss": -4126800.0,
+      "expected": 1.6767471164098091
+    },
+    {
+      "case": "nh14",
+      "column": "C",
+      "kind": "raw",
+      "profit": 6868800.0,
+      "loss": -3354200.0,
+      "expected": 2.047820642776221
+    },
+    {
+      "case": "nh14",
+      "column": "C",
+      "kind": "adjusted",
+      "profit": 6201643.166864042,
+      "loss": -3718014.070807668,
+      "expected": 1.6679988425963252
+    },
+    {
+      "case": "nh14",
+      "column": "C",
+      "kind": "specific",
+      "profit": 4243400.0,
+      "loss": -2145200.0,
+      "expected": 1.9780906209211262
+    },
+    {
+      "case": "nh14",
+      "column": "D",
+      "kind": "raw",
+      "profit": 3739000.0,
+      "loss": -2418400.0,
+      "expected": 1.5460635130664901
+    },
+    {
+      "case": "nh14",
+      "column": "D",
+      "kind": "adjusted",
+      "profit": 3304350.07873686,
+      "loss": -2701452.310379122,
+      "expected": 1.223175425322658
+    },
+    {
+      "case": "nh14",
+      "column": "D",
+      "kind": "specific",
+      "profit": 2676200.0,
+      "loss": -1981600.0,
+      "expected": 1.3505248284214777
+    },
+    {
+      "case": "yao1",
+      "column": "B",
+      "kind": "raw",
+      "profit": 15392600.0,
+      "loss": -7122000.0,
+      "expected": 2.1612749227745014
+    },
+    {
+      "case": "yao1",
+      "column": "B",
+      "kind": "adjusted",
+      "profit": 14345266.227367656,
+      "loss": -7609991.399139168,
+      "expected": 1.8850568252929136
+    },
+    {
+      "case": "yao1",
+      "column": "B",
+      "kind": "specific",
+      "profit": 11128800.0,
+      "loss": -5373400.0,
+      "expected": 2.0710909293929354
+    },
+    {
+      "case": "yao1",
+      "column": "C",
+      "kind": "raw",
+      "profit": 12011800.0,
+      "loss": -5170000.0,
+      "expected": 2.3233655705996132
+    },
+    {
+      "case": "yao1",
+      "column": "C",
+      "kind": "adjusted",
+      "profit": 11021083.43379258,
+      "loss": -5616619.976025564,
+      "expected": 1.962227012123994
+    },
+    {
+      "case": "yao1",
+      "column": "C",
+      "kind": "specific",
+      "profit": 7748000.0,
+      "loss": -3583000.0,
+      "expected": 2.162433714764164
+    },
+    {
+      "case": "yao1",
+      "column": "D",
+      "kind": "raw",
+      "profit": 3380800.0,
+      "loss": -1952000.0,
+      "expected": 1.731967213114754
+    },
+    {
+      "case": "yao1",
+      "column": "D",
+      "kind": "adjusted",
+      "profit": 2973799.5078876317,
+      "loss": -2171617.15826076,
+      "expected": 1.3693940004919358
+    },
+    {
+      "case": "yao1",
+      "column": "D",
+      "kind": "specific",
+      "profit": 3380800.0,
+      "loss": -1790400.0,
+      "expected": 1.8882931188561216
+    },
+    {
+      "case": "kaiv7",
+      "column": "B",
+      "kind": "raw",
+      "profit": 29891600.0,
+      "loss": -25445000.0,
+      "expected": 1.1747533896639812
+    },
+    {
+      "case": "kaiv7",
+      "column": "B",
+      "kind": "adjusted",
+      "profit": 28807317.706110578,
+      "loss": -26365567.791583285,
+      "expected": 1.092611315403068
+    },
+    {
+      "case": "kaiv7",
+      "column": "B",
+      "kind": "specific",
+      "profit": 18673600.0,
+      "loss": -20969400.0,
+      "expected": -0.8905166576058448
+    },
+    {
+      "case": "kaiv7",
+      "column": "C",
+      "kind": "raw",
+      "profit": 17948200.0,
+      "loss": -11969800.0,
+      "expected": 1.4994569666995272
+    },
+    {
+      "case": "kaiv7",
+      "column": "C",
+      "kind": "adjusted",
+      "profit": 17054136.475297492,
+      "loss": -12630721.640405348,
+      "expected": 1.3502107766148337
+    },
+    {
+      "case": "kaiv7",
+      "column": "C",
+      "kind": "specific",
+      "profit": 10911800.0,
+      "loss": -11779600.0,
+      "expected": -0.9263302658833916
+    },
+    {
+      "case": "kaiv7",
+      "column": "D",
+      "kind": "raw",
+      "profit": 11943400.0,
+      "loss": -13475200.0,
+      "expected": -0.8863245072429352
+    },
+    {
+      "case": "kaiv7",
+      "column": "D",
+      "kind": "adjusted",
+      "profit": 11311288.240832025,
+      "loss": -14120545.037930602,
+      "expected": -0.8010518156662967
+    },
+    {
+      "case": "kaiv7",
+      "column": "D",
+      "kind": "specific",
+      "profit": 7761800.0,
+      "loss": -9189800.0,
+      "expected": -0.8446103288428475
+    },
+    {
+      "case": "ma5",
+      "column": "B",
+      "kind": "raw",
+      "profit": 10330200.0,
+      "loss": -5021600.0,
+      "expected": 2.0571530986139877
+    },
+    {
+      "case": "ma5",
+      "column": "B",
+      "kind": "adjusted",
+      "profit": 9137371.249843465,
+      "loss": -5597617.024602206,
+      "expected": 1.6323680612095486
+    },
+    {
+      "case": "ma5",
+      "column": "B",
+      "kind": "specific",
+      "profit": 5605600.0,
+      "loss": -3442000.0,
+      "expected": 1.6285880302149913
+    },
+    {
+      "case": "ma5",
+      "column": "C",
+      "kind": "raw",
+      "profit": 6466200.0,
+      "loss": -2673600.0,
+      "expected": 2.418536804308797
+    },
+    {
+      "case": "ma5",
+      "column": "C",
+      "kind": "adjusted",
+      "profit": 5491383.671845633,
+      "loss": -3170075.0561501654,
+      "expected": 1.7322566736052407
+    },
+    {
+      "case": "ma5",
+      "column": "C",
+      "kind": "specific",
+      "profit": 3575000.0,
+      "loss": -1094000.0,
+      "expected": 3.2678244972577697
+    },
+    {
+      "case": "ma5",
+      "column": "D",
+      "kind": "raw",
+      "profit": 3864000.0,
+      "loss": -2348000.0,
+      "expected": 1.645655877342419
+    },
+    {
+      "case": "ma5",
+      "column": "D",
+      "kind": "adjusted",
+      "profit": 3170005.112968542,
+      "loss": -2690491.0000370564,
+      "expected": 1.1782255034210787
+    },
+    {
+      "case": "ma5",
+      "column": "D",
+      "kind": "specific",
+      "profit": 2030600.0,
+      "loss": -2348000.0,
+      "expected": -0.8648211243611584
+    },
+    {
+      "case": "k01",
+      "column": "B",
+      "kind": "raw",
+      "profit": 12746400.0,
+      "loss": -8522200.0,
+      "expected": 1.4956701321255075
+    },
+    {
+      "case": "k01",
+      "column": "B",
+      "kind": "adjusted",
+      "profit": 11452199.164074084,
+      "loss": -9383072.201518284,
+      "expected": 1.2205170031859067
+    },
+    {
+      "case": "k01",
+      "column": "B",
+      "kind": "specific",
+      "profit": 9521400.0,
+      "loss": -5624800.0,
+      "expected": 1.69275352012516
+    },
+    {
+      "case": "k01",
+      "column": "C",
+      "kind": "raw",
+      "profit": 9313000.0,
+      "loss": -6190600.0,
+      "expected": 1.5043776047555972
+    },
+    {
+      "case": "k01",
+      "column": "C",
+      "kind": "adjusted",
+      "profit": 8191846.550212231,
+      "loss": -6952610.184056658,
+      "expected": 1.1782404497518533
+    },
+    {
+      "case": "k01",
+      "column": "C",
+      "kind": "specific",
+      "profit": 6864000.0,
+      "loss": -3293200.0,
+      "expected": 2.0842949107251307
+    },
+    {
+      "case": "k01",
+      "column": "D",
+      "kind": "raw",
+      "profit": 3433400.0,
+      "loss": -2331600.0,
+      "expected": 1.4725510379138789
+    },
+    {
+      "case": "k01",
+      "column": "D",
+      "kind": "adjusted",
+      "profit": 2784548.38918506,
+      "loss": -2743772.5427536387,
+      "expected": 1.0148612342298966
+    },
+    {
+      "case": "k01",
+      "column": "D",
+      "kind": "specific",
+      "profit": 2657400.0,
+      "loss": -2331600.0,
+      "expected": 1.1397323726196604
+    },
+    {
+      "case": "be5",
+      "column": "B",
+      "kind": "raw",
+      "profit": 13982400.0,
+      "loss": -7175800.0,
+      "expected": 1.9485492906714235
+    },
+    {
+      "case": "be5",
+      "column": "B",
+      "kind": "adjusted",
+      "profit": 13113575.938386481,
+      "loss": -7572017.272403942,
+      "expected": 1.7318470714770597
+    },
+    {
+      "case": "be5",
+      "column": "B",
+      "kind": "specific",
+      "profit": 9716000.0,
+      "loss": -4982800.0,
+      "expected": 1.9499076824275507
+    },
+    {
+      "case": "be5",
+      "column": "C",
+      "kind": "raw",
+      "profit": 10518600.0,
+      "loss": -4801800.0,
+      "expected": 2.190553542421592
+    },
+    {
+      "case": "be5",
+      "column": "C",
+      "kind": "adjusted",
+      "profit": 9711860.206831004,
+      "loss": -5127767.423947018,
+      "expected": 1.893974395460287
+    },
+    {
+      "case": "be5",
+      "column": "C",
+      "kind": "specific",
+      "profit": 6252200.0,
+      "loss": -2898600.0,
+      "expected": 2.156972331470365
+    },
+    {
+      "case": "be5",
+      "column": "D",
+      "kind": "raw",
+      "profit": 3463800.0,
+      "loss": -2374000.0,
+      "expected": 1.4590564448188712
+    },
+    {
+      "case": "be5",
+      "column": "D",
+      "kind": "adjusted",
+      "profit": 3096637.934323397,
+      "loss": -2599330.108191643,
+      "expected": 1.1913215349464525
+    },
+    {
+      "case": "be5",
+      "column": "D",
+      "kind": "specific",
+      "profit": 3463800.0,
+      "loss": -2084200.0,
+      "expected": 1.6619326360234143
+    },
+    {
+      "case": "be5_native_parity",
+      "column": "B",
+      "kind": "raw",
+      "profit": 15060600.0,
+      "loss": -8588200.0,
+      "expected": 1.7536387135837546
+    },
+    {
+      "case": "be5_native_parity",
+      "column": "B",
+      "kind": "adjusted",
+      "profit": 14202442.671085991,
+      "loss": -9004299.649607826,
+      "expected": 1.5772956502735405
+    },
+    {
+      "case": "be5_native_parity",
+      "column": "B",
+      "kind": "specific",
+      "profit": 10794200.0,
+      "loss": -6114400.0,
+      "expected": 1.7653735444197305
+    },
+    {
+      "case": "be5_native_parity",
+      "column": "C",
+      "kind": "raw",
+      "profit": 11320600.0,
+      "loss": -5414400.0,
+      "expected": 2.0908318557919623
+    },
+    {
+      "case": "be5_native_parity",
+      "column": "C",
+      "kind": "adjusted",
+      "profit": 10529934.999371093,
+      "loss": -5747003.948058575,
+      "expected": 1.8322477406559403
+    },
+    {
+      "case": "be5_native_parity",
+      "column": "C",
+      "kind": "specific",
+      "profit": 7054200.0,
+      "loss": -3338800.0,
+      "expected": 2.1127950161734756
+    },
+    {
+      "case": "be5_native_parity",
+      "column": "D",
+      "kind": "raw",
+      "profit": 3740000.0,
+      "loss": -3173800.0,
+      "expected": 1.1783981347280863
+    },
+    {
+      "case": "be5_native_parity",
+      "column": "D",
+      "kind": "adjusted",
+      "profit": 3371486.849966555,
+      "loss": -3423930.4807321657,
+      "expected": -0.9846832080672396
+    },
+    {
+      "case": "be5_native_parity",
+      "column": "D",
+      "kind": "specific",
+      "profit": 3740000.0,
+      "loss": -2775600.0,
+      "expected": 1.3474564058221645
+    }
+  ]
+}

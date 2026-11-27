@@ -1,0 +1,33 @@
+{
+  "database": "data/market.sqlite",
+  "strategy": "strategies/pl-workbench-example.pl",
+  "output": "outputs/pl-workbench",
+  "function_files": {},
+  "market": {"symbol":"TXF1","unit":"minutes","period":10},
+  "parameters": {
+    "strategy_name": "REA_PL範例",
+    "dataset_id": 11,
+    "source_interval_minutes": 10,
+    "from": "2026-10-01T00:00:00",
+    "to": "2026-10-28T13:45:00",
+    "interval_minutes": 10,
+    "bar_anchor_minutes": 0,
+    "timestamp_role": "end",
+    "warmup_bars": 500,
+    "initial_capital": 1000000,
+    "tick_size": 1,
+    "point_value": 200,
+    "commission_per_side": 800,
+    "slippage_ticks": 0,
+    "contracts": 1,
+    "margin_per_contract": null,
+    "enforce_cash_balance": false,
+    "inputs": {},
+    "functions": {},
+    "research_note": "流程範例；讀取既有 MC 匯出 600 秒 K，交易條件僅供驗證程式。"
+  },
+  "report_settings": {
+    "interval_label": "600 秒 K",
+    "layout_profile": "data/mc-report-layout-be5.json"
+  }
+}

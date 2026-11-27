@@ -1,0 +1,110 @@
+{
+  "schema": "rea-bar-construction-rules-v1",
+  "profiles": [
+    {
+      "id": "txf1_mc_900s_close_exclusive_v1",
+      "status": "verified_against_user_mc_export",
+      "confirmed_on": "2026-10-25",
+      "symbol": "TXF1",
+      "timezone": "Asia/Taipei",
+      "bar_seconds": 900,
+      "timestamp_role": "end",
+      "sessions": [
+        {
+          "start": "08:45:00",
+          "end": "13:45:00",
+          "end_inclusive": false
+        },
+        {
+          "start": "15:00:00",
+          "end": "05:00:00",
+          "crosses_midnight": true,
+          "end_inclusive": false
+        }
+      ],
+      "alignment": "按各交易時段起點對齊",
+      "ordinary_bucket": "[start,end)；一般分棒邊界成交屬下一根",
+      "session_close_rule": "排除恰好13:45:00.000000000及05:00:00.000000000成交；不納入末根",
+      "equal_timestamps": "保留原始成交順序與重複Tick，不去重",
+      "empty_intervals": "不補造無成交K棒；保留來源缺口",
+      "legacy_difference": "原彙整器將收盤整點Tick納入最後一根；本MC相容profile排除",
+      "source_dataset_id": 4,
+      "source_tick_sha256": "df6ab5736221f07dc6df4fa828b8a6367eb49480e38520cac8712e6d5b6eadb8",
+      "reference": "C:/WorkSpace/Codex/REA/TXF1 900 秒.txt",
+      "reference_sha256": "02f8f2b5efe4c53a78565a891e3a445b39d34ce80323fe755331c2c0c03da23d",
+      "verification": {
+        "bars": 105944,
+        "excluded_ticks": 516,
+        "excluded_volume": "19656",
+        "legacy_different_bars": 337,
+        "legacy_different_day_close_bars": 281,
+        "legacy_different_night_close_bars": 56,
+        "legacy_different_close_prices": 179,
+        "legacy_different_low_prices": 1,
+        "remaining_ohlcv_differences": 0,
+        "evidence": "outputs/kaiv7-close-exclusive-v1/comparison.json"
+      },
+      "reproduce": {
+        "aggregator": "rust/src/bin/test_close_boundary.rs",
+        "comparator": "scripts/compare-close-boundary.py"
+      },
+      "scope": "僅驗證本次TXF1來源與900秒MC匯出；其他商品、週期及時段模板須各自驗證",
+      "raw_ticks_modified": false,
+      "legacy_default_changed": false,
+      "backtest_equivalence_implied": false
+    },
+    {
+      "id": "txf1_nh14_1440s_close_exclusive_sample_v2",
+      "status": "verified_against_nh14_diag_sample_only",
+      "symbol": "TXF1",
+      "bar_seconds": 1440,
+      "timestamp_role": "end",
+      "alignment": "日盤08:45、夜盤15:00起點",
+      "session_close_rule": "排除恰好13:45:00.000000000與05:00:00.000000000成交；不補造空棒或缺口",
+      "source_dataset_id": 4,
+      "derived_dataset_id": 9,
+      "bars": 66883,
+      "mc_sample_bars": 514,
+      "sample_start": "2021-02-01",
+      "sample_end": "2021-02-24",
+      "sample_ohlcv_differences": 0,
+      "excluded_ticks": 516,
+      "excluded_volume": "19656",
+      "changed_legacy_bars": 337,
+      "evidence": "data/derived/TXF1-1440s-close-exclusive-nh14-v2/verification.json",
+      "reproduce": "scripts/rebuild-nh14-close-bars.py",
+      "mc_full_period_verified": false,
+      "backtest_equivalence_implied": false,
+      "raw_ticks_modified": false
+    },
+    {
+      "id": "txf1_mc_600s_close_exclusive_be5_v1",
+      "status": "verified_against_user_mc_export_historical_range",
+      "confirmed_on": "2026-10-28",
+      "symbol": "TXF1",
+      "timezone": "Asia/Taipei",
+      "bar_seconds": 600,
+      "timestamp_role": "end",
+      "alignment": "日盤08:45、夜盤15:00起點",
+      "session_close_rule": "排除恰好13:45:00及05:00:00成交，保留原Tick且不補造K棒",
+      "source_dataset_id": 4,
+      "derived_dataset_id": 10,
+      "mc_export_dataset_id": 11,
+      "reference": "C:\\WorkSpace\\Codex\\REA\\TXF1 600 秒.txt",
+      "reference_sha256": "52c0001bff53f1e502c68d24b3b9ac6bcb5b818a2533ea621eecc1224dfaa0e3",
+      "verification": {
+        "common_bars": 158932,
+        "start": "2019-12-31T15:10:00",
+        "end": "2026-10-23T05:00:00",
+        "timestamp_and_ohlcv_differences": 0,
+        "mc_only_bars_after_test_cutoff": 136,
+        "candidate_only_bars": 0,
+        "evidence": "outputs/be5-mc-600s-20261028-v1/comparison.json",
+        "replay_evidence": "outputs/be5-mc-600s-20261028-v1/replay-comparison.json"
+      },
+      "scope": "僅本次TXF1、600秒及提供的MC匯出，超過Tick截止的136棒不列入原始報告比較；不能泛用其他商品或週期。",
+      "raw_ticks_modified": false,
+      "backtest_equivalence_implied": false
+    }
+  ]
+}

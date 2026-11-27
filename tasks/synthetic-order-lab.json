@@ -1,0 +1,18 @@
+{
+  "database":"data/synthetic-order-lab/market.sqlite",
+  "strategy":"strategies/REA_SyntheticOrderLab.pl",
+  "output":"outputs/pl-workbench",
+  "function_files":{},
+  "market":{"symbol":"REA_SYNTH","unit":"minutes","period":1},
+  "parameters":{
+    "strategy_name":"REA_SyntheticOrderLab",
+    "from":"","to":"2026-10-26T11:51:00",
+    "warmup_bars":50,"initial_capital":10000,
+    "price_scale":1,"minimum_move":1,"tick_size":1,"point_value":1,
+    "contracts":1,"commission_per_side":1,"slippage_ticks":0,
+    "interval_minutes":1,"bar_anchor_minutes":0,"timestamp_role":"end",
+    "enforce_cash_balance":false,"inputs":{},"functions":{},
+    "research_note":"人工生成行情，非TXF1真實行情；獨立資料庫與人工期望值。S05/S06價序依近端極值、等距先低假設，待MC驗證。"
+  },
+  "report_settings":{"interval_label":"1 分 K（人工行情）","layout_profile":"data/mc-report-layout-be5.json"}
+}

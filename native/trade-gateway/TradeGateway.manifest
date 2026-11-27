@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity type="win32" name="StrategyStudio.TradeGateway" version="1.0.0.0" processorArchitecture="amd64"/>
+  <file name="KGICGCAPIATL2x64.dll">
+    <comClass clsid="{337595D9-9BAE-46C0-925F-6C08ACF54B47}" threadingModel="Apartment"
+              tlbid="{F5B3F68D-CE1F-4EE0-8B22-B822D99B2ED2}"/>
+    <typelib tlbid="{F5B3F68D-CE1F-4EE0-8B22-B822D99B2ED2}" version="1.0" helpdir=""/>
+  </file>
+  <comInterfaceExternalProxyStub iid="{A15DB400-9540-437F-8C19-FB14039E22A9}" name="IKGICGCAPI"
+      tlbid="{F5B3F68D-CE1F-4EE0-8B22-B822D99B2ED2}" proxyStubClsid32="{00020424-0000-0000-C000-000000000046}"/>
+</assembly>

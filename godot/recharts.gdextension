@@ -1,0 +1,13 @@
+[configuration]
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = "4.3"
+reloadable = true
+
+[libraries]
+windows.debug.x86_64 = "res://bin/recharts_core.dll"
+windows.release.x86_64 = "res://bin/recharts_core.dll"
+linux.debug.x86_64 = "res://bin/librecharts_core.so"
+linux.release.x86_64 = "res://bin/librecharts_core.so"
+macos.debug = "res://bin/librecharts_core.dylib"
+macos.release = "res://bin/librecharts_core.dylib"
+
